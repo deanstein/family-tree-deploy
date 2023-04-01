@@ -1,14 +1,24 @@
-name: Get PAT
+name: Update Family Tree Data
+
 on:
-  push:
-    branches:
-      - main
+  repository_dispatch:
+    types: [my-custom-event]
+
 jobs:
-  my_job:
+  my-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Get PAT
-        env:
-          sPAT: ${{ secrets.FAMILY_TREE_DATA_PAT }}
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Write JSON data to file
         run: |
-          echo $sPAT
+          echo ${{ github.event.client_payload.familyTreeData }} > ${{ github.event.client_payload.fileName }}
+
+      - name: Commit and push changes
+        uses: EndBug/add-and-commit@v7
+        with:
+          message: Update ${{ github.event.client_payload.fileName }}
+          add: ${{ github.event.client_payload.fileName }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.FAMILY_TREE_DATA_PAT }}
