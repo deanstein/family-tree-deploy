@@ -1,0 +1,14 @@
+name: Get PAT
+on:
+  push:
+    branches:
+      - main
+jobs:
+  my_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get PAT
+        env:
+          sPAT: ${{ secrets.FAMILY_TREE_DATA_PAT }}
+        run: |
+          echo $sPAT
