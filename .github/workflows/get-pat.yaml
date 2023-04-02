@@ -21,4 +21,4 @@ jobs:
           message: Update ${{ github.event.client_payload.fileName }}
           add: ${{ github.event.client_payload.fileName }}
         env:
-          GITHUB_TOKEN: ${{ secrets.FAMILY_TREE_DATA_PAT }}
+          FAMILY_TREE_DATA_PAT: ${{ vars.FAMILY_TREE_DATA_PAT }}
