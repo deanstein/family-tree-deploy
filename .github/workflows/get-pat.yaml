@@ -1,6 +1,10 @@
+name: Example Workflow
+on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Set up environment variable
         run: echo "FAMILY_TREE_DATA_PAT=${{ secrets.FAMILY_TREE_DATA_PAT }}" >> $GITHUB_ENV
+      - name: Run script
+        run: node script.js
