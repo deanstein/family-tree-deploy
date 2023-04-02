@@ -1,8 +1,8 @@
-name: family-tree-data-update
+name: Update Family Tree
 
 on:
   repository_dispatch:
-    types: [my-custom-event]
+    types: [family-tree-data-update]
 
 jobs:
   my-job:
