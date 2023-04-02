@@ -3,8 +3,6 @@ name: Update Family Tree Data
 on:
   repository_dispatch:
     types: [my-custom-event]
-env:
-  DAY_OF_WEEK: Monday
 
 jobs:
   my-job:
@@ -23,4 +21,4 @@ jobs:
           message: Update ${{ github.event.client_payload.fileName }}
           add: ${{ github.event.client_payload.fileName }}
         env:
-          FAMILY_TREE_DATA_PAT: ${{ vars.FAMILY_TREE_DATA_PAT }}
+          FAMILY_TREE_DATA_PAT: ${{ secrets.FAMILY_TREE_DATA_PAT }}
