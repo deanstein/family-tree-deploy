@@ -1,4 +1,4 @@
-name: Update Family Tree Data
+name: family-tree-data-update
 
 on:
   repository_dispatch:
