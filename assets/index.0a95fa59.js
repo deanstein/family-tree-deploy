@@ -38,7 +38,7 @@ Person to compare: `+t);return}ss(r,t)||(e=!0),ce.update(i=>(e&&(i.unsavedChange
 			:disabled:hover {
 				background-color: ${D.colors.buttonColorDisabled};
 			}
-		`)},[t,i,o,f,a,s,l,u,c,d]}class Ge extends de{constructor(e){super(),fe(this,e,dc,fc,le,{buttonText:0,isEnabled:1,onClickFunction:2,overrideColor:4,overrideColorHover:5,overrideBackgroundColor:6,overrideBackgroundColorHover:7,overrideFontSize:8,overridePadding:9})}}function pc(n){let e,r,t,i,o,a,s,l,u,c,d,f,p;return s=new Ge({props:{buttonText:n[1],onClickFunction:n[2]}}),{c(){e=G("div"),r=G("div"),t=G("div"),i=G("i"),a=K(),T(s.$$.fragment),l=K(),u=G("div"),c=ue(n[3]),this.h()},l(h){e=R(h,"DIV",{id:!0,class:!0});var v=O(e);r=R(v,"DIV",{id:!0,class:!0});var g=O(r);t=R(g,"DIV",{id:!0,class:!0});var b=O(t);i=R(b,"I",{class:!0}),O(i).forEach(C),b.forEach(C),a=Z(g),F(s.$$.fragment,g),g.forEach(C),l=Z(v),u=R(v,"DIV",{id:!0,class:!0});var m=O(u);c=he(m,n[3]),m.forEach(C),v.forEach(C),this.h()},h(){x(i,"class",o=n[6]+" fa-solid "+n[0]+" svelte-2cyw1o"),x(t,"id","icon-container"),x(t,"class",n[5]+" icon-container svelte-2cyw1o"),x(r,"id","button-and-icon-container"),x(r,"class","button-and-icon-container svelte-2cyw1o"),x(u,"id","example-tree-description"),x(u,"class",n[7]+" tree-description svelte-2cyw1o"),x(e,"id","tree-option-container"),x(e,"class",n[4]+" tree-option-container svelte-2cyw1o")},m(h,v){q(h,e,v),N(e,r),N(r,t),N(t,i),N(r,a),z(s,r,null),N(e,l),N(e,u),N(u,c),d=!0,f||(p=[me(t,"click",function(){Ye(n[2])&&n[2].apply(this,arguments)}),me(t,"keypress",function(){Ye(n[2])&&n[2].apply(this,arguments)})],f=!0)},p(h,[v]){n=h,(!d||v&1&&o!==(o=n[6]+" fa-solid "+n[0]+" svelte-2cyw1o"))&&x(i,"class",o);const g={};v&2&&(g.buttonText=n[1]),v&4&&(g.onClickFunction=n[2]),s.$set(g),(!d||v&8)&&Se(c,n[3])},i(h){d||(k(s.$$.fragment,h),d=!0)},o(h){I(s.$$.fragment,h),d=!1},d(h){h&&C(e),V(s),f=!1,Ve(p)}}}function hc(n,e,r){let{faIcon:t}=e,{buttonText:i}=e,{buttonFunction:o}=e,{description:a}=e;const s=ae`
+		`)},[t,i,o,f,a,s,l,u,c,d]}class Ge extends de{constructor(e){super(),fe(this,e,dc,fc,le,{buttonText:0,isEnabled:1,onClickFunction:2,overrideColor:4,overrideColorHover:5,overrideBackgroundColor:6,overrideBackgroundColorHover:7,overrideFontSize:8,overridePadding:9})}}function pc(n){let e,r,t,i,o,a,s,l,u,c,d,f,p;return s=new Ge({props:{buttonText:n[1],onClickFunction:n[2]}}),{c(){e=G("div"),r=G("div"),t=G("div"),i=G("i"),a=K(),T(s.$$.fragment),l=K(),u=G("div"),c=ue(n[3]),this.h()},l(h){e=R(h,"DIV",{id:!0,class:!0});var v=O(e);r=R(v,"DIV",{id:!0,class:!0});var g=O(r);t=R(g,"DIV",{id:!0,class:!0});var b=O(t);i=R(b,"I",{class:!0}),O(i).forEach(C),b.forEach(C),a=Z(g),F(s.$$.fragment,g),g.forEach(C),l=Z(v),u=R(v,"DIV",{id:!0,class:!0});var m=O(u);c=he(m,n[3]),m.forEach(C),v.forEach(C),this.h()},h(){x(i,"class",o=n[6]+" fa-solid "+n[0]+" svelte-1lspt88"),x(t,"id","icon-container"),x(t,"class",n[5]+" icon-container svelte-1lspt88"),x(r,"id","button-and-icon-container"),x(r,"class","button-and-icon-container svelte-1lspt88"),x(u,"id","example-tree-description"),x(u,"class",n[7]+" tree-description svelte-1lspt88"),x(e,"id","tree-option-container"),x(e,"class",n[4]+" tree-option-container svelte-1lspt88")},m(h,v){q(h,e,v),N(e,r),N(r,t),N(t,i),N(r,a),z(s,r,null),N(e,l),N(e,u),N(u,c),d=!0,f||(p=[me(t,"click",function(){Ye(n[2])&&n[2].apply(this,arguments)}),me(t,"keypress",function(){Ye(n[2])&&n[2].apply(this,arguments)})],f=!0)},p(h,[v]){n=h,(!d||v&1&&o!==(o=n[6]+" fa-solid "+n[0]+" svelte-1lspt88"))&&x(i,"class",o);const g={};v&2&&(g.buttonText=n[1]),v&4&&(g.onClickFunction=n[2]),s.$set(g),(!d||v&8)&&Se(c,n[3])},i(h){d||(k(s.$$.fragment,h),d=!0)},o(h){I(s.$$.fragment,h),d=!1},d(h){h&&C(e),V(s),f=!1,Ve(p)}}}function hc(n,e,r){let{faIcon:t}=e,{buttonText:i}=e,{buttonFunction:o}=e,{description:a}=e;const s=ae`
 		@media (max-width: ${D.breakpoints.width[0]}) {
 			flex-direction: column;
 			padding-top: 10px;
@@ -52,8 +52,10 @@ Person to compare: `+t);return}ss(r,t)||(e=!0),ce.update(i=>(e&&(i.unsavedChange
 			padding-top: 0px;
 		}
 	`,l=ae`
-		padding: ${D.sizes.padding}`,u=ae`
-		color: ${D.colors.activeColor}`,c=ae`
+		padding: ${D.sizes.padding};
+	`,u=ae`
+		color: ${D.colors.activeColor};
+	`,c=ae`
 		@media (max-width: ${D.breakpoints.width[0]}) {
 			position: relative;
 		}
